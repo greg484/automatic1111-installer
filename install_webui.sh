@@ -1,17 +1,16 @@
 #!/bin/bash
 
-# WebUI を /opt に clone
-cd /opt
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
 
 # ControlNet 拡張をインストール
-cd /opt/stable-diffusion-webui/extensions
-git clone https://github.com/Mikubill/sd-webui-controlnet.git
+git clone https://github.com/Mikubill/sd-webui-controlnet.git /extensions/sd-webui-controlnet
 
-# モデルを同期（Google Drive -> WebUI）
-#cd /opt/stable-diffusion-webui
-#rclone sync gdrive:models/Stable-diffusion ./models/Stable-diffusion
-#rclone sync gdrive:models/ControlNet ./extensions/sd-webui-controlnet/models
+#cd /opt/stable-diffusion-webui/extensions
+#git clone https://github.com/Mikubill/sd-webui-controlnet.git
 
-# WebUI 起動
-./webui.sh
+# rclone でモデルを同期（Google Drive -> WebUI）
+# WebUIのルートに戻ってから同期
+#cd stable-diffusion-webui
+
+rclone sync gdrive:models_fb /stable-diffusion-webui/models/Stable-diffusion
+#rclone sync gdrive:models/ControlNet /opt/stable-diffusion-webui/extensions/sd-webui-controlnet/models
