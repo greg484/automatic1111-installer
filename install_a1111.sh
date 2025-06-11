@@ -10,5 +10,7 @@ git clone https://github.com/Mikubill/sd-webui-controlnet.git extensions/sd-webu
 
 rclone sync gdrive:models_fb models/Stable-diffusion
 rclone sync gdrive:ControlNet extensions/sd-webui-controlnet/models
-echo "Model sync done."
+
+echo "これは自動生成されたテキストファイルです。" > /workspace/testfile.txt
+
 
