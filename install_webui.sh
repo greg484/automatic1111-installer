@@ -3,7 +3,7 @@
 cd stable-diffusion-webui
 
 # ControlNet 拡張をインストール
-git clone https://github.com/Mikubill/sd-webui-controlnet.git extensions/sd-webui-controlnet
+git clone https://github.com/Mikubill/sd-webui-controlnet.git extensions
 
 #cd /opt/stable-diffusion-webui/extensions
 #git clone https://github.com/Mikubill/sd-webui-controlnet.git
