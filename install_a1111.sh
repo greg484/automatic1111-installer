@@ -7,5 +7,8 @@ cd /workspace/stable-diffusion-webui
 git clone https://github.com/Mikubill/sd-webui-controlnet.git extensions/sd-webui-controlnet
 
 # モデルの同期
+
 rclone sync gdrive:models_fb models/Stable-diffusion
 rclone sync gdrive:ControlNet extensions/sd-webui-controlnet/models
+echo "Model sync done."
+
