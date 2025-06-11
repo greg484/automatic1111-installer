@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #AUTOMATIC1111
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git /workspace/stable-diffusion-webui
 
