@@ -23,7 +23,7 @@ pkill -f launch.py
 echo "Starting AUTOMATIC1111..."
 # WebUI 起動
 cd /workspace/stable-diffusion-webui
-nohup python launch.py --listen --port 7860 --xformers > /workspace/webui.log 2>&1 &
+nohup python3 launch.py --listen --port 7860 --xformers > /workspace/webui.log 2>&1 &
 
 #echo "これは自動生成されたテキストファイルです。" > /workspace/testfile.txt
 
