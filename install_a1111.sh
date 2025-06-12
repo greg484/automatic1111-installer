@@ -13,6 +13,10 @@ git clone https://github.com/Mikubill/sd-webui-controlnet.git extensions/sd-webu
 rclone sync gdrive-gr:models_fb models/Stable-diffusion
 rclone sync gdrive-gr:ControlNet extensions/sd-webui-controlnet/models
 
+#起動
+cd /workspace/stable-diffusion-webui
+python launch.py --listen --port 7860 --xformers &
+
 #echo "これは自動生成されたテキストファイルです。" > /workspace/testfile.txt
 
 
